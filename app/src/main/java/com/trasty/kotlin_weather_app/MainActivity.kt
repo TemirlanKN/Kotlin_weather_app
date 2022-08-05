@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportFragmentManager
-            .beginTransaction().replace(R.id.placeHolder, MainFragment.newInstance()).commit()
+            .beginTransaction()
+            .replace(R.id.placeHolder, MainFragment.newInstance())
+            .commit()
     }
 }
