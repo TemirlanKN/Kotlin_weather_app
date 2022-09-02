@@ -13,6 +13,7 @@ class WeatherAdapter: ListAdapter<WeatherModel, WeatherAdapter.Holder>(Comparato
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
         val binding = ListItemBinding.bind(view)
+
         fun bind(item: WeatherModel) = with(binding){
             tvDate.text = item.time
             tvCondition.text = item.condition

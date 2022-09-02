@@ -36,11 +36,16 @@ class HoursFragment : Fragment() {
         adapter = WeatherAdapter()
         rcView.adapter = adapter
 
-        val list = listOf<WeatherModel>(
-            WeatherModel("Miami", "09:00", "Sunny",
+        val list = listOf(
+            WeatherModel(
+                "", "09:00", "Sunny",
                 "25C", "", "", "", ""),
-            WeatherModel("Miami", "12:00", "Sunny",
-            "35C", "", "", "", "")
+            WeatherModel(
+                "", "12:00", "Sunny",
+            "35C", "", "", "", "") ,
+            WeatherModel(
+                "", "15:00", "Sunny",
+            "33C", "", "", "", "")
         )
 
         adapter.submitList(list)
